@@ -2,7 +2,7 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "field:customer_name",
+ "autoname": "field:customer_id",
  "creation": "2022-03-11 23:01:04.853370",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -46,7 +46,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Customer ID",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "customer_name",
@@ -203,7 +204,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-12 18:46:55.283070",
+ "modified": "2022-03-12 20:56:27.709113",
  "modified_by": "Administrator",
  "module": "Warehouse Management",
  "name": "Custome",
