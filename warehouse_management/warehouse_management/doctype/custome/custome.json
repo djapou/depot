@@ -1,0 +1,231 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:customer_name",
+ "creation": "2022-03-11 23:01:04.853370",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_id",
+  "customer_name",
+  "category",
+  "city",
+  "address",
+  "address_2",
+  "contact",
+  "email",
+  "position",
+  "status",
+  "product_type",
+  "total_area_leased",
+  "fp_zone_column",
+  "zone_1",
+  "zone_2",
+  "zone_3",
+  "phone",
+  "cell_no",
+  "fax",
+  "freeport_cert_no",
+  "vat_no",
+  "web_url",
+  "date",
+  "expiry",
+  "brn",
+  "storage_permit",
+  "section_break_27",
+  "description_of_activity",
+  "column_break_29",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Category",
+   "options": "Select..."
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "address_2",
+   "fieldtype": "Data",
+   "label": "Address 2"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Data",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "label": "Position"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Select..."
+  },
+  {
+   "fieldname": "product_type",
+   "fieldtype": "Data",
+   "label": "Product Type"
+  },
+  {
+   "fieldname": "total_area_leased",
+   "fieldtype": "Float",
+   "label": "Total Area Leased"
+  },
+  {
+   "fieldname": "fp_zone_column",
+   "fieldtype": "Column Break",
+   "label": "FP Zone"
+  },
+  {
+   "default": "0",
+   "fieldname": "zone_1",
+   "fieldtype": "Check",
+   "label": "Zone 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "zone_2",
+   "fieldtype": "Check",
+   "label": "Zone 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "zone_3",
+   "fieldtype": "Check",
+   "label": "Zone 3"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "cell_no",
+   "fieldtype": "Data",
+   "label": "Cell No"
+  },
+  {
+   "fieldname": "fax",
+   "fieldtype": "Data",
+   "label": "Fax"
+  },
+  {
+   "fieldname": "freeport_cert_no",
+   "fieldtype": "Data",
+   "label": "Freeport Cert No"
+  },
+  {
+   "fieldname": "vat_no",
+   "fieldtype": "Float",
+   "label": "VAT No"
+  },
+  {
+   "fieldname": "web_url",
+   "fieldtype": "Data",
+   "label": "Web Url"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "expiry",
+   "fieldtype": "Date",
+   "label": "Expiry"
+  },
+  {
+   "fieldname": "brn",
+   "fieldtype": "Data",
+   "label": "BRN"
+  },
+  {
+   "fieldname": "storage_permit",
+   "fieldtype": "Int",
+   "label": "Storage Permit"
+  },
+  {
+   "fieldname": "section_break_27",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description_of_activity",
+   "fieldtype": "Small Text",
+   "label": "Description of Activity"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-03-12 18:46:55.283070",
+ "modified_by": "Administrator",
+ "module": "Warehouse Management",
+ "name": "Custome",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

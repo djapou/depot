@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:container_no",
+ "creation": "2022-03-11 23:38:48.272350",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "released",
+  "container_no",
+  "type",
+  "description",
+  "rate",
+  "zone",
+  "date_in",
+  "date_out"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "released",
+   "fieldtype": "Check",
+   "label": "Released"
+  },
+  {
+   "fieldname": "container_no",
+   "fieldtype": "Data",
+   "label": "Container No",
+   "unique": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Int",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "zone",
+   "fieldtype": "Link",
+   "label": "Zone",
+   "options": "Warehous"
+  },
+  {
+   "fieldname": "date_in",
+   "fieldtype": "Date",
+   "label": "Date In"
+  },
+  {
+   "fieldname": "date_out",
+   "fieldtype": "Date",
+   "label": "Date Out"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-03-12 18:44:18.982885",
+ "modified_by": "Administrator",
+ "module": "Warehouse Management",
+ "name": "Container",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

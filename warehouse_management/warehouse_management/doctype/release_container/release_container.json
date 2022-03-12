@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-03-12 01:31:04.279051",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "fp_zone",
+  "customer_id",
+  "outbound",
+  "column_break_4",
+  "tofficer",
+  "customer_name",
+  "date_out",
+  "released_container",
+  "section_break_9",
+  "released_containers"
+ ],
+ "fields": [
+  {
+   "fieldname": "fp_zone",
+   "fieldtype": "Link",
+   "label": "FP Zone",
+   "options": "Warehous"
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "label": "Customer ID",
+   "options": "Custome"
+  },
+  {
+   "fieldname": "outbound",
+   "fieldtype": "Link",
+   "label": "Outbound",
+   "options": "Bill Outbound"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tofficer",
+   "fieldtype": "Link",
+   "label": "T.Officer",
+   "options": "Traffic Officer"
+  },
+  {
+   "fetch_from": "customer_id.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "date_out",
+   "fieldtype": "Date",
+   "label": "Date Out"
+  },
+  {
+   "default": "0",
+   "fieldname": "released_container",
+   "fieldtype": "Check",
+   "label": "Released Container"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "released_containers",
+   "fieldtype": "Table",
+   "label": "Released Containers",
+   "options": "Container"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-03-12 01:47:26.198571",
+ "modified_by": "Administrator",
+ "module": "Warehouse Management",
+ "name": "Release Container",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,196 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:lot_no",
+ "creation": "2022-03-12 00:35:56.607194",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "fp_zone",
+  "inbound",
+  "customer_id",
+  "customer_name",
+  "discrepancy_noted_column",
+  "no",
+  "yes",
+  "lot_no",
+  "date_in",
+  "billdate",
+  "section_break_11",
+  "inbound_products",
+  "column_break_13",
+  "status",
+  "section_break_15",
+  "delete_selected_row",
+  "taily_sheet",
+  "column_break_18",
+  "select_product_from_inbound_to_add_to_taily_sheet",
+  "product",
+  "quantity",
+  "pallets",
+  "per_pallet",
+  "p_ratio",
+  "shared"
+ ],
+ "fields": [
+  {
+   "fieldname": "fp_zone",
+   "fieldtype": "Link",
+   "label": "FP Zone",
+   "options": "Warehous"
+  },
+  {
+   "fieldname": "inbound",
+   "fieldtype": "Link",
+   "label": "Inbound",
+   "options": "Bill Inbound"
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "label": "Customer ID",
+   "options": "Custome"
+  },
+  {
+   "fetch_from": "customer_id.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "discrepancy_noted_column",
+   "fieldtype": "Column Break",
+   "label": "Discrepancy Noted"
+  },
+  {
+   "default": "0",
+   "fieldname": "no",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "fieldname": "lot_no",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Lot No",
+   "unique": 1
+  },
+  {
+   "fieldname": "date_in",
+   "fieldtype": "Datetime",
+   "label": "Date In"
+  },
+  {
+   "fieldname": "billdate",
+   "fieldtype": "Date",
+   "label": "Billdate"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "inbound_products",
+   "fieldtype": "Small Text",
+   "label": "Inbound Products"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Small Text",
+   "label": "Status"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "delete_selected_row",
+   "fieldtype": "Button",
+   "label": "Delete Selected Row"
+  },
+  {
+   "fieldname": "taily_sheet",
+   "fieldtype": "Small Text",
+   "label": "Taily Sheet"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "select_product_from_inbound_to_add_to_taily_sheet",
+   "fieldtype": "Button",
+   "label": "Select Product From Inbound to add to Taily Sheet"
+  },
+  {
+   "fieldname": "product",
+   "fieldtype": "Link",
+   "label": "Product",
+   "options": "Product"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "pallets",
+   "fieldtype": "Data",
+   "label": "Pallets"
+  },
+  {
+   "fieldname": "per_pallet",
+   "fieldtype": "Data",
+   "label": "Per pallet"
+  },
+  {
+   "fieldname": "p_ratio",
+   "fieldtype": "Data",
+   "label": "P. ratio"
+  },
+  {
+   "fieldname": "shared",
+   "fieldtype": "Data",
+   "label": "Shared"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-03-12 18:41:44.004558",
+ "modified_by": "Administrator",
+ "module": "Warehouse Management",
+ "name": "Physical Taily Sheet",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

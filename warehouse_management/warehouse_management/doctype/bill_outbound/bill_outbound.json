@@ -1,0 +1,236 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:outbound",
+ "creation": "2022-03-12 00:18:36.085253",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bill_details",
+  "outbound",
+  "customer_id",
+  "traffic_officer",
+  "fp_zone",
+  "cpc_code",
+  "country",
+  "transport",
+  "truck_no",
+  "column_break_10",
+  "date",
+  "customer_name",
+  "no_of_items",
+  "containers",
+  "containers_numbers",
+  "section_break_16",
+  "inbounds",
+  "section_break_18",
+  "remarks",
+  "item_details",
+  "select_product",
+  "section_break_22",
+  "prod_code",
+  "quantity",
+  "balance",
+  "deliver_now",
+  "column_break_27",
+  "unit",
+  "description",
+  "section_break_30",
+  "bill_outbound"
+ ],
+ "fields": [
+  {
+   "fieldname": "bill_details",
+   "fieldtype": "Tab Break",
+   "label": "Bill Details"
+  },
+  {
+   "fieldname": "outbound",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Outbound",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "label": "Customer ID",
+   "options": "Custome"
+  },
+  {
+   "fieldname": "traffic_officer",
+   "fieldtype": "Link",
+   "label": "Traffic Officer",
+   "options": "Traffic Officer"
+  },
+  {
+   "fieldname": "fp_zone",
+   "fieldtype": "Link",
+   "label": "FP Zone",
+   "options": "Warehous"
+  },
+  {
+   "fieldname": "cpc_code",
+   "fieldtype": "Link",
+   "label": "Cpc Code",
+   "options": "Regime"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "transport",
+   "fieldtype": "Data",
+   "label": "Transport"
+  },
+  {
+   "fieldname": "truck_no",
+   "fieldtype": "Data",
+   "label": "Truck No"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fetch_from": "customer_id.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "no_of_items",
+   "fieldtype": "Int",
+   "label": "No Of Items"
+  },
+  {
+   "fieldname": "containers",
+   "fieldtype": "Int",
+   "label": "Containers"
+  },
+  {
+   "fieldname": "containers_numbers",
+   "fieldtype": "Table",
+   "label": "Containers Numbers",
+   "options": "Container"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "inbounds",
+   "fieldtype": "Table",
+   "label": "Inbounds",
+   "options": "Bill Inboun"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "item_details",
+   "fieldtype": "Tab Break",
+   "label": "Item Details"
+  },
+  {
+   "fieldname": "select_product",
+   "fieldtype": "Table",
+   "label": "Select Product",
+   "options": "Bill Inboun"
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "prod_code",
+   "fieldtype": "Link",
+   "label": "Prod Code",
+   "options": "Product"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "balance",
+   "fieldtype": "Int",
+   "label": "Balance"
+  },
+  {
+   "fieldname": "deliver_now",
+   "fieldtype": "Int",
+   "label": "Deliver Now"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "Unit"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_30",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bill_outbound",
+   "fieldtype": "Table",
+   "label": "Bill Outbound",
+   "options": "Bill Inboun"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-03-12 18:42:53.206180",
+ "modified_by": "Administrator",
+ "module": "Warehouse Management",
+ "name": "Bill Outbound",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

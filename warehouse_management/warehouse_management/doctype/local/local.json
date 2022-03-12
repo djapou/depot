@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:location_code",
+ "creation": "2022-03-11 23:16:03.638783",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "location_code",
+  "zone_code",
+  "rack_code",
+  "aisle",
+  "bay",
+  "on_hold_column",
+  "putaway",
+  "picking",
+  "max_pallet_ratio",
+  "side",
+  "level"
+ ],
+ "fields": [
+  {
+   "fieldname": "location_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Location Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "zone_code",
+   "fieldtype": "Link",
+   "label": "Zone Code",
+   "options": "Zone"
+  },
+  {
+   "fieldname": "rack_code",
+   "fieldtype": "Select",
+   "label": "Rack Code",
+   "options": "Select..."
+  },
+  {
+   "fieldname": "aisle",
+   "fieldtype": "Data",
+   "label": "Aisle"
+  },
+  {
+   "fieldname": "bay",
+   "fieldtype": "Data",
+   "label": "Bay"
+  },
+  {
+   "fieldname": "on_hold_column",
+   "fieldtype": "Column Break",
+   "label": "On Hold"
+  },
+  {
+   "default": "0",
+   "fieldname": "putaway",
+   "fieldtype": "Check",
+   "label": "Putaway"
+  },
+  {
+   "default": "0",
+   "fieldname": "picking",
+   "fieldtype": "Check",
+   "label": "Picking"
+  },
+  {
+   "fieldname": "max_pallet_ratio",
+   "fieldtype": "Data",
+   "label": "Max Pallet Ratio"
+  },
+  {
+   "fieldname": "side",
+   "fieldtype": "Data",
+   "label": "Side"
+  },
+  {
+   "fieldname": "level",
+   "fieldtype": "Int",
+   "label": "Level"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-03-12 18:46:17.653805",
+ "modified_by": "Administrator",
+ "module": "Warehouse Management",
+ "name": "Local",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

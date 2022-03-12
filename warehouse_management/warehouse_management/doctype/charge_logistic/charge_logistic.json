@@ -1,0 +1,159 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:request_no",
+ "creation": "2022-03-12 01:20:30.255784",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "fp_zone",
+  "inbound",
+  "customer_id",
+  "traffic_officer",
+  "date",
+  "column_break_6",
+  "invoice_no",
+  "revision",
+  "customer_name",
+  "request_no",
+  "credit",
+  "section_break_12",
+  "logistic_service_charge",
+  "section_break_14",
+  "remarks",
+  "column_break_16",
+  "total",
+  "vat_15",
+  "amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "fp_zone",
+   "fieldtype": "Link",
+   "label": "FP Zone",
+   "options": "Warehous"
+  },
+  {
+   "fieldname": "inbound",
+   "fieldtype": "Link",
+   "label": "Inbound",
+   "options": "Bill Inbound"
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "label": "Customer ID",
+   "options": "Custome"
+  },
+  {
+   "fieldname": "traffic_officer",
+   "fieldtype": "Link",
+   "label": "Traffic Officer",
+   "options": "Traffic Officer"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "invoice_no",
+   "fieldtype": "Data",
+   "label": "Invoice No"
+  },
+  {
+   "fieldname": "revision",
+   "fieldtype": "Link",
+   "label": "Revision",
+   "options": "Revise Bill"
+  },
+  {
+   "fetch_from": "customer_id.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "request_no",
+   "fieldtype": "Data",
+   "label": "Request No",
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "credit",
+   "fieldtype": "Check",
+   "label": "Credit"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "logistic_service_charge",
+   "fieldtype": "Table",
+   "label": "Logistic Service Charge",
+   "options": "Charge Marketing"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Float",
+   "label": "Total"
+  },
+  {
+   "fieldname": "vat_15",
+   "fieldtype": "Float",
+   "label": "VAT 15%"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Float",
+   "label": "Amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-03-12 18:40:06.902720",
+ "modified_by": "Administrator",
+ "module": "Warehouse Management",
+ "name": "Charge Logistic",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
