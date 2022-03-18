@@ -1,0 +1,29 @@
+{%  extends "templates/web.html" %}
+
+{% block page_content %}
+
+<div class="py-20 row">
+    <div class="col-sm-2">
+        <img alt="{{ title }}" src="{{ image }}">
+    </div>
+
+    <div class="col">
+        <h1>{{ title }}</h1>
+        <p class="lead">By {{ author }}</p>
+        <div>
+            {%- if statut == 'Disponible' -%}
+            <span class="badge badge-success">Disponible</span>
+            {%- elif statut == 'Emis' -%}
+            <span class="badge badge-primary">Emis</span>
+            {%- endif -%}
+        </div>
+        <div class="mt-4">
+            <div>Editor: <strong>{{ editor }}</strong></div>
+            <div>ISBN: <strong>{{ isbn }}</strong></div>
+        </div>
+        <p>{{ description }}</p>
+    </div>
+
+</div>
+
+{% endblock %}
